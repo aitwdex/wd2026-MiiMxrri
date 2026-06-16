@@ -55,16 +55,16 @@ async function getWeather() {
   //textContent→innerHTML：Bootstrapのカードの枠組みごと画面に送り込みたかった。文字だけはtextContent
   document.getElementById("temp").innerHTML =`
 
-  <div class="p-3 border rounded bg-white shadow-sm">
+  
+  
         <div class="border-bottom pb-2 mb-3">
           <div class="fs-2 fw-bold border-start border-primary border-4 ps-2">大阪の天気</div>
-          </div>
         <p class="card-text fs-3">
           <strong>天気:</strong> ${weather} 
            </p>
            </div>
 
-        
+        <div class="d-flex justify-content-center align-items-center vh-100">
        <div class="p-3 border rounded bg-white shadow-sm">
         <div class="border-bottom pb-2 mb-3">
           <div class="fs-2 fw-bold border-start border-primary border-4 ps-2">気温
@@ -96,6 +96,7 @@ async function getWeather() {
           <strong>風速:</strong> ${wind} km/h 
         </p>
         </div>
+  
 
   `;
      

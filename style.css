@@ -1,0 +1,6 @@
+.container { display: flex; gap: 1rem; }/*隙間*/
+.card { flex: 1; }/*画面ぴったりに伸び縮み*/
+
+@media (max-width: 600px) {
+  .container { flex-direction: column; }/*横→縦*/
+}
